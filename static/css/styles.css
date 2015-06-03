@@ -36,6 +36,9 @@ background-image: url(http://www.transparenttextures.com/patterns/black-linen.pn
 	margin-bottom: 20px;
 }
 
+textarea{
+	max-height:200px;
+}
 
 .pullquote{
 	float:left;

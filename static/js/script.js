@@ -1,5 +1,4 @@
 $("textarea[name='quote']").keyup(function(){
-	console.log("KEYUP");
 	$("#pullquote .quote").html("<p>“"+cleaner($(this).val())+"”</p>");
 	$("#pullquote .quote").css("font-size",parseInt($( "#size" ).val()));
 });
@@ -22,7 +21,7 @@ $("button").click(function(){
 
 	/*$.get( "https://thetractorbeam.herokuapp.com/image", { url: "https://dmn-pullquote.herokuapp.com/puller/?"+$("#quoteForm").serialize(), selector: "#pullquote" });
 */
-	$.get( "https://thetractorbeam.herokuapp.com/image", { url: "http://interactives.dallasnews.com/charts/2015/5/chartWerkNo29.html", selector: "#chart" });
+	$.get( "https://thetractorbeam.herokuapp.com/image?url=http%3A%2F%2Finteractives.dallasnews.com%2Fcharts%2F2015%2F5%2FchartWerkNo29.html&selector=%23chart");
 
 })
 
