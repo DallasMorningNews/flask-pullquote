@@ -12,9 +12,6 @@
 	padding:15px 20px 10px;
 
 background-color: #26466d;
-background-image: url(http://www.transparenttextures.com/patterns/black-linen.png);
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
 }
 #header img{
 	height:18px;
@@ -59,10 +56,15 @@ textarea{
 #pullquote img{
 	position:absolute;
 	height:15px;
-	bottom:15px;
-	right:15px;
+	bottom:20px;
+	right:20px;
 }
 
+#pullquote .quote{
+	position: relative;
+  	top: 40%;
+  	transform: translateY(-50%);
+}
 
 
 #pullquote .attribution{
