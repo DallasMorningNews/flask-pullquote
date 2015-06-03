@@ -15,14 +15,7 @@ $("#titleEntry").keyup(function(){
 
 
 $("button").click(function(){
-	console.log($("#quoteForm").serialize());
-
-
-
-	/*$.get( "https://thetractorbeam.herokuapp.com/image", { url: "https://dmn-pullquote.herokuapp.com/puller/?"+$("#quoteForm").serialize(), selector: "#pullquote" });
-*/
-	$.get( "https://thetractorbeam.herokuapp.com/image?url=http%3A%2F%2Finteractives.dallasnews.com%2Fcharts%2F2015%2F5%2FchartWerkNo29.html&selector=%23chart");
-
+	window.location="https://thetractorbeam.herokuapp.com/image?url="+escape("https://dmn-pullquote.herokuapp.com/puller/?" + $("#quoteForm").serialize() ) +"&selector=%23pullquote";
 })
 
 
