@@ -7,15 +7,22 @@
 
 #header{
 	font-family: 'Merriweather';
-	font-size: 30px;
 	color: white;
-	background-color: #333;
 	width:100%;
-	padding:5px 10px 3px;
+	padding:15px 20px 10px;
+
+background-color: #26466d;
+background-image: url(http://www.transparenttextures.com/patterns/black-linen.png);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
 }
 #header img{
-	height:20px;
-	vertical-align: top;
+	height:18px;
+	vertical-align: bottom;
+}
+#header h1{
+	font-size: 55px;
+	margin-top: -30px;
 }
 
 #entry{
@@ -38,7 +45,7 @@
 
 #pullquote{
 	width:600px;
-	height:332px;
+	height:336px;
 	padding:20px 25px 10px;
 	background-color: #26466D;
 	color:#fff;
@@ -74,4 +81,12 @@
 #pullquote .attribution p.title {
   max-width: 335px;
   line-height: 16px;
+}
+
+
+
+/**/
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus{
+	border:1px solid #333 !important;
+	background: lightgrey !important;
 }

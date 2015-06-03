@@ -20,10 +20,9 @@ $("button").click(function(){
 
 
 
-	/*window.location = "/puller/?"+$("#quoteForm").serialize();*/
-
-
-	$.get( "https://thetractorbeam.herokuapp.com/image/", { url: "http://www.google.com", selector: "hplogo" });
+	/*$.get( "https://thetractorbeam.herokuapp.com/image", { url: "https://dmn-pullquote.herokuapp.com/puller/?"+$("#quoteForm").serialize(), selector: "#pullquote" });
+*/
+	$.get( "https://thetractorbeam.herokuapp.com/image", { url: "http://interactives.dallasnews.com/charts/2015/5/chartWerkNo29.html", selector: "#chart" });
 
 })
 

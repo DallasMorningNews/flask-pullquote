@@ -3,12 +3,14 @@ from flask import Flask, request, render_template
 
 
 app = Flask(__name__)
+cors = CORS(app)
 
 @app.route('/')
 def home():
     return render_template('home.html')
 
 @app.route('/puller/')
+@cross_origin()
 def puller():
 	print("HELLOOOOOO!!!!")
 	print(request.args)
