@@ -1,0 +1,1 @@
+web: gunicorn pullquote:app --log-file=-

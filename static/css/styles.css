@@ -1,0 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather|Open+Sans);
+
+#body{
+	padding:10px 20px;
+
+}
+
+#header{
+	font-family: 'Merriweather';
+	font-size: 30px;
+	color: white;
+	background-color: #333;
+	width:100%;
+	padding:5px 10px 3px;
+}
+#header img{
+	height:20px;
+	vertical-align: top;
+}
+
+#entry{
+	width:40%;
+	height:100%;
+	padding:10px;
+	float:left;
+}
+.fifty{
+	width:50%;
+	margin-bottom: 20px;
+}
+
+
+.pullquote{
+	float:left;
+	padding-top: 20px;
+	margin-left: 20px;
+}
+
+#pullquote{
+	width:600px;
+	height:332px;
+	padding:20px 25px 10px;
+	background-color: #26466D;
+	color:#fff;
+	font-family: 'Merriweather';
+	position:relative;
+}
+
+#pullquote img{
+	position:absolute;
+	height:20px;
+	bottom:15px;
+	right:15px;
+}
+
+
+
+#pullquote .attribution{
+	height:50px;
+	position:absolute;
+	bottom:15px;
+	left:15px;
+	font-family: 'Open Sans';
+	padding-left: 10px;
+}
+
+#pullquote .attribution p.name {
+  color: rgb(143, 143, 143);
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: -2px;
+}
+
+#pullquote .attribution p.title {
+  max-width: 335px;
+  line-height: 16px;
+}
