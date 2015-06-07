@@ -1,101 +1,25 @@
-<!DOCTYPE html>
-<html>
-
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>PullQuote</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+{%extends 'base.html'%}
+{%block header%}
+{%endblock%}
 
 
-        <link rel="apple-touch-icon" sizes="57x57" 			href="{{ url_for('static', filename='img/apple-icon-57x57.png')}}">
-		<link rel="apple-touch-icon" sizes="60x60" 			href="{{ url_for('static', filename='img/apple-icon-60x60.png')}}">
-		<link rel="apple-touch-icon" sizes="72x72" 			href="{{ url_for('static', filename='img/apple-icon-72x72.png')}}">
-		<link rel="apple-touch-icon" sizes="76x76" 			href="{{ url_for('static', filename='img/apple-icon-76x76.png')}}">
-		<link rel="apple-touch-icon" sizes="114x114" 		href="{{ url_for('static', filename='img/apple-icon-114x114.png')}}">
-		<link rel="apple-touch-icon" sizes="120x120" 		href="{{ url_for('static', filename='img/apple-icon-120x120.png')}}">
-		<link rel="apple-touch-icon" sizes="144x144" 		href="{{ url_for('static', filename='img/apple-icon-144x144.png')}}">
-		<link rel="apple-touch-icon" sizes="152x152" 		href="{{ url_for('static', filename='img/apple-icon-152x152.png')}}">
-		<link rel="apple-touch-icon" sizes="180x180" 		href="{{ url_for('static', filename='img/apple-icon-180x180.png')}}">
-		<link rel="icon" type="image/png" sizes="192x192"  	href="{{ url_for('static', filename='img/android-icon-192x192.png')}}">
-		<link rel="icon" type="image/png" sizes="32x32" 	href="{{ url_for('static', filename='img/favicon-32x32.png')}}">
-		<link rel="icon" type="image/png" sizes="96x96" 	href="{{ url_for('static', filename='img/favicon-96x96.png')}}">
-		<link rel="icon" type="image/png" sizes="16x16" 	href="{{ url_for('static', filename='img/favicon-16x16.png')}}">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" 			content="{{ url_for('static', filename='img//ms-icon-144x144.png')}}">
-		<meta name="theme-color" content="#ffffff">
+{%block body%}
+
+
+<div class="property dmn">
+<a href="{{url_for('dmn_quote')}}">
+    <img src="{{ url_for('static', filename='img/logo.png')}}"> :Quote
+</a>
+</div>
 
 
 
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css')}}">
-        <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css">
-
-        <style type="text/css">
-        #header{
-        	background-image: url({{url_for('static', filename='img/black-linen.png')}});
-        }
-        </style>
-
-    </head>
-    <body>
-
-    <div id="header"><h1><img src="{{ url_for('static', filename='img/logo.png')}}"><br>:PullQuote</h1>
-    </div>
-
-    <div id="body">
-
-    <div id="entry">
-    <form id="quoteForm">
-    	<div class="form-group">
-	    	<label for="quoteEntry">Quote:</label>
-	    	<textarea type="text" name="quote" class="form-control" id="quoteEntry"></textarea>
-    	</div>
-
-
-    	<div class="fifty">
-    	<label for="size">Font Size:</label>
-  		<input type="number" id="size" name="size" readonly style="border:0; color:#767676; font-weight:bold;">
-    	<div id="slider"></div>
-    	</div>
-
-    	<div class="form-group">
-	    	<label for="nameEntry">Speaker Name:</label>
-	    	<input type="text" name="name" class="form-control" id="nameEntry">
-    	</div>
-    	<div class="form-group">
-	    	<label for="titleEntry">Speaker Title:</label>
-	    	<input type="text" name="title" class="form-control" id="titleEntry">
-    	</div>
+<div class="property dmn">
+<a href="{{url_for('dmn_number')}}">
+    <img src="{{ url_for('static', filename='img/logo.png')}}"> :Stat
+</a>
+</div>
 
 
 
-    	
-    </form>
-
-    <button class="btn btn-default btn-lg">PullQuote >></button>
-    </div>
-
-    <div class="pullquote">
-    	<div id="pullquote">
-    		<div class="quote"></div>
-    		<div class="attribution">
-    			<p class="name"></p>
-    			<p class="title"></p>
-    		</div>
-    		<img src="{{ url_for('static', filename='img/logo.png')}}">
-
-    	</div>
-    </div>
-
-
-    </div>
-
-
-        <script src="{{ url_for('static', filename='js/script.js')}}"></script>
-    </body>
-</html>
+{%endblock%}

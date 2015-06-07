@@ -37,54 +37,42 @@ textarea{
 	max-height:200px;
 }
 
-.pullquote{
-	float:left;
-	padding-top: 20px;
-	margin-left: 20px;
+/*Home page temp styles*/
+
+
+.property{
+	width:475px;
+	padding:20px;
+	margin:10px auto;
+	  font-family: 'Merriweather';
+  color: white;
+  font-size: 35px;
+  transition:background-color .5s linear;
 }
 
-#pullquote{
-	width:600px;
-	height:336px;
-	padding:20px 25px 10px;
-	background-color: #26466D;
-	color:#fff;
-	font-family: 'Merriweather';
-	position:relative;
+.property:first-child{
+	margin-top: 60px;
+}
+.property img{
+	height:30px;
+}
+.dmn{
+	background-color: #26466d;
+}
+.property:hover{
+	background-color:rgb(85,85,85);
 }
 
-#pullquote img{
-	position:absolute;
-	height:15px;
-	bottom:20px;
-	right:20px;
+a{
+	margin:0;
+	padding:0;
+	color:white;
+}
+a:hover{
+	text-decoration: none;
+	color:white;
 }
 
-#pullquote .quote{
-
-}
-
-
-#pullquote .attribution{
-	height:50px;
-	position:absolute;
-	bottom:15px;
-	left:15px;
-	font-family: 'Open Sans';
-	padding-left: 10px;
-}
-
-#pullquote .attribution p.name {
-  color: rgb(143, 143, 143);
-  font-size: 21px;
-  font-weight: 600;
-  margin-bottom: -2px;
-}
-
-#pullquote .attribution p.title {
-  max-width: 335px;
-  line-height: 16px;
-}
 
 
 

@@ -1,0 +1,61 @@
+{%extends 'base.html'%}
+
+{%block header%}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dmn_quote.css')}}">
+{%endblock%}
+
+
+{%block body%}
+<div id="entry">
+ <form id="quoteForm">
+	<div class="form-group">
+    	<label for="quoteEntry">Quote:</label>
+    	<textarea type="text" name="quote" class="form-control" id="quoteEntry"></textarea>
+	</div>
+
+
+	<div class="fifty">
+	<label for="size">Font Size:</label>
+		<input type="number" id="size" name="size" readonly style="border:0; color:#767676; font-weight:bold;">
+	<div id="slider"></div>
+	</div>
+
+	<div class="form-group">
+    	<label for="nameEntry">Speaker Name:</label>
+    	<input type="text" name="name" class="form-control" id="nameEntry">
+	</div>
+	<div class="form-group">
+    	<label for="titleEntry">Speaker Title:</label>
+    	<input type="text" name="title" class="form-control" id="titleEntry">
+	</div>
+
+	
+</form>
+<button class="btn btn-default btn-lg">PullQuote >></button>
+</div>
+
+
+
+
+<div class="pullquote">
+<div id="pullquote">
+	<div class="quote"></div>
+	<div class="attribution">
+		<p class="name"></p>
+		<p class="title"></p>
+	</div>
+	<img src="{{ url_for('static', filename='img/logo.png')}}">
+
+</div>
+</div>
+{%endblock%}
+
+
+{%block footer_js%}
+<script src="{{ url_for('static', filename='js/dmn_quote.js')}}"></script>
+<script type="text/javascript">
+$("button").click(function(){
+    window.location="https://thetractorbeam.herokuapp.com/image?url="+escape("{{url_for('quote_puller', _external=True)}}?" + $("#quoteForm").serialize() ) +"&selector=%23pullquote";
+})
+</script>
+{%endblock footer_js%}

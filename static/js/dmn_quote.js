@@ -14,11 +14,6 @@ $("#titleEntry").keyup(function(){
 
 
 
-$("button").click(function(){
-	window.location="https://thetractorbeam.herokuapp.com/image?url="+escape("https://dmn-pullquote.herokuapp.com/puller/?" + $("#quoteForm").serialize() ) +"&selector=%23pullquote";
-})
-
-
 $(function() {
 
 	if($("#pullquote .quote").html() != ""){
