@@ -14,6 +14,28 @@
 	color:#fff;
 	font-family: 'Merriweather';
 	position:relative;
+
+background:
+	linear-gradient(-90deg, rgba(256,256,256,.05) 1px, transparent 1px),
+	linear-gradient(rgba(256,256,256,.05) 1px, transparent 1px), 
+	linear-gradient(-90deg, rgba(256,256,256, .06) 1px, transparent 1px),
+	linear-gradient(rgba(256,256,256,.06) 1px, transparent 1px),
+
+	linear-gradient(transparent 6px, #26466d 6px, #26466d 158px, transparent 158px),
+	linear-gradient(-90deg, rgba(192,192,192,.4) 1px, transparent 1px),
+	linear-gradient(-90deg, transparent 4px, #26466d 4px, #26466d 157px, transparent 157px),
+	linear-gradient(rgba(192,192,192,.4) 2px, transparent 2px),
+	#26466d;
+background-size:
+	16px 16px,
+	16px 16px,
+	160px 160px,
+	160px 160px,
+	160px 160px,
+	160px 160px,
+	160px 160px,
+	160px 160px;
+
 }
 
 #pullquote img{
