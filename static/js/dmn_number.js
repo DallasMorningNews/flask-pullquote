@@ -42,7 +42,7 @@ $(function() {
         $( "#numSize" ).val( ui.value );
         $("#pullquote .number").css("font-size",parseInt(ui.value));
         $("#pullquote .number").css("line-height",parseInt($( "#numSize" ).val())*.85 + "px");
-
+        $("#pullquote .context").css("padding-top", parseInt(ui.value) * .068 + "px" );
       }
     });
     $( "#numSize" ).val( $( "#numSlider" ).slider( "value" )  );
