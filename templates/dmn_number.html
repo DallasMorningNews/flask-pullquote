@@ -10,19 +10,24 @@
  <form id="quoteForm">
     <div class="form-group">
         <label for="quoteEntry">Big Number:</label>
-        <input type="text" name="num" class="form-control" id="numEntry">
+        <input type="text" name="num" class="form-control" id="numEntry" placeholder="Numbers in AP style">
     </div>
 
+
+    
+
+    <div class="form-group">
+        <label for="contextEntry">Number context:</label>
+        <textarea type="text" name="numContext" class="form-control" id="contextEntry" placeholder=""></textarea>
+    </div>
+
+
+    <div class="alert alert-info" role="alert">Adjust both font sizes until text is <b>all right</b> or <b>all below</b> Big Number</div>
 
     <div class="fifty">
     <label for="numSize">Number size:</label>
         <input type="number" id="numSize" name="numSize" readonly style="border:0; color:#767676; font-weight:bold;">
     <div id="numSlider"></div>
-    </div>
-
-    <div class="form-group">
-        <label for="contextEntry">Number context:</label>
-        <textarea type="text" name="numContext" class="form-control" id="contextEntry"></textarea>
     </div>
 
     <div class="fifty">
@@ -34,7 +39,7 @@
 
     <div class="form-group">
         <label for="nameEntry">Source:</label>
-        <input type="text" name="source" class="form-control" id="nameEntry">
+        <input type="text" name="source" class="form-control" id="nameEntry" placeholder="Who produced your statistic?">
     </div>
     <div class="form-group">
         <label for="titleEntry">Source context:</label>
