@@ -1,5 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Monda);
 
+
+.fifty{
+	width:45%;
+	margin-right: 5%;
+	float:left;
+}
+.alert-info{
+	max-width: 475px;
+}
+
 .pullquote{
 	float:left;
 	padding-top: 20px;
