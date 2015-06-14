@@ -48,15 +48,12 @@
         <style type="text/css">
             #pullquote .quote{
                 font-size: {{size}}px;
-                {%if property == 'guidelive'%}
-                font-style:italic;
-                {%endif%}
             }
         </style>
 
     <div class="pullquote">
         <div id="pullquote">
-            <div class="quote">{{quote}}</div>
+            <div class="quote">{%if property == 'guidelive'%}<em>{{quote}}</em>{%else%}{{quote}}{%endif%}</div>
             <div class="attribution">
                 <p class="name">{{name}}</p>
                 <p class="title">{{title}}</p>
