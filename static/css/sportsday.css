@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather|Open+Sans);
+
 .pullquote{
 	float:left;
 	padding-top: 20px;
@@ -8,7 +10,7 @@
 	width:600px;
 	height:336px;
 	padding:20px 25px 10px;
-	background-color: #26466D;
+	background-color: #AB0202;
 	color:#fff;
 	font-family: 'Merriweather';
 	position:relative;
@@ -16,14 +18,13 @@
 
 #pullquote img{
 	position:absolute;
-	height:20px;
+	height: 20px;
 	bottom:20px;
 	right:20px;
 }
 
 #pullquote .quote{
-	font-size: 2.5rem;
-	line-height: 3.5rem;
+
 }
 
 
@@ -34,16 +35,18 @@
 	left:15px;
 	font-family: 'Open Sans';
 	padding-left: 10px;
+	margin-top: -4rem;
 }
 
 #pullquote .attribution p.name {
-  color: rgb(178,178,178);
+  
   font-size: 21px;
-  font-weight: 600;
-  margin-bottom: -2px;
+  margin-bottom: 2px;
 }
 
 #pullquote .attribution p.title {
+  color: #D3D3D3;
   max-width: 335px;
   line-height: 16px;
 }
+

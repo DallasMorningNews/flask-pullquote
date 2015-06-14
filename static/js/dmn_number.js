@@ -34,7 +34,7 @@ $(function() {
 	
 
     $( "#numSlider" ).slider({
-      value:84,
+      value:100,
       min: 56,
       max: 170,
       step: 2,
@@ -48,7 +48,7 @@ $(function() {
     $( "#numSize" ).val( $( "#numSlider" ).slider( "value" )  );
 
     $( "#txtSlider" ).slider({
-      value:30,
+      value:28,
       min: 16,
       max: 42,
       step: 2,

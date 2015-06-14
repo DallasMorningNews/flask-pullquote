@@ -1,7 +1,23 @@
 {%extends 'base.html'%}
 
 {%block header%}
+
+
+{%if property == 'dallasnews'%}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dmn_quote.css')}}">
+{%elif property == 'aldia'%}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/aldia.css')}}">
+{%elif property == 'guidelive'%}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/guidelive.css')}}">
+<style type="text/css">
+	#pullquote{
+		background: url({{ url_for('static', filename='img/glbackgroundtwitter.png') }}) no-repeat;
+	}
+</style>
+{%elif property == 'sportsday'%}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/sportsday.css')}}">
+{%endif%}
+
 {%endblock%}
 
 
@@ -28,7 +44,7 @@
     	<label for="titleEntry">Speaker Title:</label>
     	<input type="text" name="title" class="form-control" id="titleEntry">
 	</div>
-
+	<input type="hidden" name="property" value="{{property}}">
 	
 </form>
 <button class="btn btn-default btn-lg">PullQuote >></button>
@@ -44,8 +60,15 @@
 		<p class="name"></p>
 		<p class="title"></p>
 	</div>
-	<img src="{{ url_for('static', filename='img/logo.png')}}">
-
+	{%if property == 'dallasnews'%}
+	<img src="{{ url_for('static', filename='img/tdmnwhite.png')}}">
+	{%elif property == 'aldia'%}
+	<img src="{{ url_for('static', filename='img/aldia.png')}}">
+	{%elif property == 'guidelive'%}
+	<img src="{{ url_for('static', filename='img/guidelive.png')}}">
+	{%elif property == 'sportsday'%}
+	<img src="{{ url_for('static', filename='img/sportsday.png')}}">
+	{%endif%}
 </div>
 </div>
 {%endblock%}
@@ -56,6 +79,6 @@
 <script type="text/javascript">
 $("button").click(function(){
     window.location="https://thetractorbeam.herokuapp.com/image?url="+escape("{{url_for('quote_puller', _external=True)}}?" + $("#quoteForm").serialize() ) +"&selector=%23pullquote";
-})
+});
 </script>
 {%endblock footer_js%}

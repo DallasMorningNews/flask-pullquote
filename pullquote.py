@@ -11,12 +11,28 @@ def home():
 
 @app.route('/dmn/quote/')
 def dmn_quote():
-    return render_template('dmn_quote.html')
+    property = 'dallasnews'
+    return render_template('dmn_quote.html', property = property)
 
 
 @app.route('/dmn/big-number/')
 def dmn_number():
     return render_template('dmn_number.html')
+
+@app.route('/aldia/quote/')
+def aldia_quote():
+    property = 'aldia'
+    return render_template('dmn_quote.html', property = property)
+
+@app.route('/guidelive/quote/')
+def guidelive_quote():
+    property = 'guidelive'
+    return render_template('dmn_quote.html', property = property)
+
+@app.route('/sportsday/quote/')
+def sportsday_quote():
+    property = 'sportsday'
+    return render_template('dmn_quote.html', property = property)
 
 @app.route('/quote/puller/')
 def quote_puller():
@@ -24,7 +40,8 @@ def quote_puller():
     name = request.args['name']
     title = request.args['title']
     size = request.args['size']
-    return render_template('quote.html', quote=quote, name=name, title=title, size=size)
+    property = requests.args['property']
+    return render_template('quote.html', quote=quote, name=name, title=title, size=size, property=property)
 
 
 @app.route('/number/puller/')

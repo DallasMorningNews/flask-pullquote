@@ -13,7 +13,33 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css')}}">
         <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css">
+        {%if property == 'dallasnews'%}
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dmn_quote.css')}}">
+        {%elif property == 'aldia'%}
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/aldia.css')}}">
+        <style type="text/css">
+            #pullquote{
+                background: url({{ url_for('static', filename='img/glbackgroundtwitter.png') }}) no-repeat;
+            }
+        </style>
+        {%elif property == 'guidelive'%}
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/guidelive.css')}}">
+        {%elif property == 'sportsday'%}
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/sportsday.css')}}">
+        {%endif%}
+
+        <style type="text/css">
+            @font-face {
+                font-family: 'Standard CT';
+                src: url({{url_for('static', filename='fonts/standardct-medium-cond.ttf')}});
+            }
+            @font-face {
+                font-family: 'Proxima Nova';
+                src: url({{url_for('static', filename='fonts/proxima-nova-regular.ttf')}});
+            }
+        </style>   
+
+
     </head>
     <body>
         <style type="text/css">
@@ -29,7 +55,15 @@
                 <p class="name">{{name}}</p>
                 <p class="title">{{title}}</p>
             </div>
-            <img src="{{ url_for('static', filename='img/logo.png')}}">
+            {%if property == 'dallasnews'%}
+            <img src="{{ url_for('static', filename='img/tdmnwhite.png')}}">
+            {%elif property == 'aldia'%}
+            <img src="{{ url_for('static', filename='img/aldia.png')}}">
+            {%elif property == 'guidelive'%}
+            <img src="{{ url_for('static', filename='img/guidelive.png')}}">
+            {%elif property == 'sportsday'%}
+            <img src="{{ url_for('static', filename='img/sportsday.png')}}">
+            {%endif%}
 
         </div>
 

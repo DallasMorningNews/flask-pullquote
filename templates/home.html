@@ -1,5 +1,12 @@
 {%extends 'base.html'%}
 {%block header%}
+
+<style type="text/css">
+	.property.guidelive{
+		background: url({{ url_for('static', filename='img/glbackgroundtwitter.png') }}) no-repeat;
+	}
+</style>
+
 {%endblock%}
 
 
@@ -8,7 +15,7 @@
 
 <div class="property dmn">
 <a href="{{url_for('dmn_quote')}}">
-    <img src="{{ url_for('static', filename='img/logo.png')}}"> :Quote
+    <img src="{{ url_for('static', filename='img/tdmnwhite.png')}}"> :Quote
 </a>
 </div>
 
@@ -16,10 +23,27 @@
 
 <div class="property dmn">
 <a href="{{url_for('dmn_number')}}">
-    <img src="{{ url_for('static', filename='img/logo.png')}}"> :Stat
+    <img src="{{ url_for('static', filename='img/tdmnwhite.png')}}"> :Stat
 </a>
 </div>
 
+<div class="property aldia">
+<a href="{{url_for('aldia_quote')}}">
+    <img src="{{ url_for('static', filename='img/aldia.png')}}"> :Quote
+</a>
+</div>
+
+<div class="property guidelive">
+<a href="{{url_for('guidelive_quote')}}">
+    <img src="{{ url_for('static', filename='img/guidelive.png')}}"> :Quote
+</a>
+</div>
+
+<div class="property sportsday">
+<a href="{{url_for('sportsday_quote')}}">
+    <img src="{{ url_for('static', filename='img/sportsday.png')}}"> :Quote
+</a>
+</div>
 
 
 {%endblock%}
