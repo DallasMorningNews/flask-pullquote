@@ -54,7 +54,11 @@ textarea{
 	margin-top: 60px;
 }
 .property img{
-	height:30px;
+  height: 25px;
+  margin-left: 20px;
+}
+.property.stat img{
+	margin-left: 55px;
 }
 .property:hover{
 	background-color:rgb(85,85,85);
@@ -71,24 +75,30 @@ textarea{
 	color:#333;
 }
 .aldia img {
-  margin-left: 166px;
-  height: 34px;
+  height: 30px;
 }
 .property.aldia:hover{
 	background-color:rgb(165, 165, 165);
 }
+.property.aldia:hover a{
+	color:white;
+}
+.guidelive{
+	background-color: #D84E93;
+}
 .guidelive img {
-  margin-left: 254px;
+
   height: 48px;
 }
 .property.guidelive:hover{
 		background:rgb(85,85,85);
 }
+
 .sportsday{
 	background-color: #AB0202;
 }
 .sportsday img {
-  margin-left: 62px;
+
 }
 
 a{

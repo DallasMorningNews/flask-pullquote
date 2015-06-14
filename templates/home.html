@@ -1,12 +1,5 @@
 {%extends 'base.html'%}
 {%block header%}
-
-<style type="text/css">
-	.property.guidelive{
-		background: url({{ url_for('static', filename='img/glbackgroundtwitter.png') }}) no-repeat;
-	}
-</style>
-
 {%endblock%}
 
 
@@ -15,33 +8,33 @@
 
 <div class="property dmn">
 <a href="{{url_for('dmn_quote')}}">
-    <img src="{{ url_for('static', filename='img/tdmnwhite.png')}}"> :Quote
+    :Quote <img src="{{ url_for('static', filename='img/tdmnwhite.png')}}">
 </a>
 </div>
 
 
 
-<div class="property dmn">
+<div class="property dmn stat">
 <a href="{{url_for('dmn_number')}}">
-    <img src="{{ url_for('static', filename='img/tdmnwhite.png')}}"> :Stat
+   :Stat <img src="{{ url_for('static', filename='img/tdmnwhite.png')}}"> 
 </a>
 </div>
 
 <div class="property aldia">
 <a href="{{url_for('aldia_quote')}}">
-    <img src="{{ url_for('static', filename='img/aldia.png')}}"> :Quote
+    :Quote <img src="{{ url_for('static', filename='img/aldia.png')}}">
 </a>
 </div>
 
 <div class="property guidelive">
 <a href="{{url_for('guidelive_quote')}}">
-    <img src="{{ url_for('static', filename='img/guidelive.png')}}"> :Quote
+    :Quote <img src="{{ url_for('static', filename='img/guidelive.png')}}"> 
 </a>
 </div>
 
 <div class="property sportsday">
 <a href="{{url_for('sportsday_quote')}}">
-    <img src="{{ url_for('static', filename='img/sportsday.png')}}"> :Quote
+    :Quote <img src="{{ url_for('static', filename='img/sportsday.png')}}"> 
 </a>
 </div>
 
