@@ -40,7 +40,7 @@ def quote_puller():
     name = request.args['name']
     title = request.args['title']
     size = request.args['size']
-    property = requests.args['property']
+    property = request.args['property']
     return render_template('quote.html', quote=quote, name=name, title=title, size=size, property=property)
 
 

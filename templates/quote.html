@@ -17,13 +17,14 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dmn_quote.css')}}">
         {%elif property == 'aldia'%}
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/aldia.css')}}">
+        
+        {%elif property == 'guidelive'%}
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/guidelive.css')}}">
         <style type="text/css">
             #pullquote{
                 background: url({{ url_for('static', filename='img/glbackgroundtwitter.png') }}) no-repeat;
             }
         </style>
-        {%elif property == 'guidelive'%}
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/guidelive.css')}}">
         {%elif property == 'sportsday'%}
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/sportsday.css')}}">
         {%endif%}
