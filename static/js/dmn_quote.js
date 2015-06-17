@@ -28,7 +28,7 @@ $(function() {
       step: 2,
       slide: function( event, ui ) {
         $( "#size" ).val( ui.value );
-        $("#pullquote .quote").css("font-size",parseInt(ui.value));
+        $("#pullquote .quote").css("font-size",parseInt(ui.value)).css("line-height",parseInt(ui.value) * 1.4 + "px");
       }
     });
     $( "#size" ).val( $( "#slider" ).slider( "value" )  );
