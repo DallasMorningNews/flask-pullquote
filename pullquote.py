@@ -34,6 +34,11 @@ def sportsday_quote():
     property = 'sportsday'
     return render_template('dmn_quote.html', property = property)
 
+@app.route('/neighborsgo/quote/')
+def neighborsgo_quote():
+    property = 'neighborsgo'
+    return render_template('dmn_quote.html', property = property)
+
 @app.route('/quote/puller/')
 def quote_puller():
     quote = request.args['quote']

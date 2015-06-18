@@ -43,11 +43,11 @@ textarea{
 .property{
 	width:475px;
 	padding:20px;
-	margin:10px auto;
+	margin:20px auto;
 	  font-family: 'Merriweather';
   color: white;
   font-size: 35px;
-  transition:background-color .5s linear, background .5s linear;
+  transition:border-color .5s linear, box-shadow .5s linear;
 }
 
 .property:first-child{
@@ -61,7 +61,8 @@ textarea{
 	margin-left: 55px;
 }
 .property:hover{
-	background-color:rgb(85,85,85);
+	border-color: black;
+    box-shadow: 0 0px 75px black;
 }
 
 .dmn{
@@ -77,12 +78,7 @@ textarea{
 .aldia img {
   height: 30px;
 }
-.property.aldia:hover{
-	background-color:rgb(165, 165, 165);
-}
-.property.aldia:hover a{
-	color:white;
-}
+
 .guidelive{
 	background-color: #D84E93;
 }
@@ -90,15 +86,20 @@ textarea{
 
   height: 48px;
 }
-.property.guidelive:hover{
-		background:rgb(85,85,85);
-}
+
 
 .sportsday{
 	background-color: #AB0202;
 }
 .sportsday img {
 
+}
+
+.neighborsgo {
+	background: #9CCCF6;
+}
+.neighborsgo img {
+  height: 48px;
 }
 
 a{
@@ -108,8 +109,8 @@ a{
 	transition:color .5s linear;
 }
 a:hover{
+	color:inherit;
 	text-decoration: none;
-	color:white;
 }
 
 
