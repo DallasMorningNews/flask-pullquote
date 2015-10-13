@@ -19,6 +19,10 @@ def dmn_quote():
 def dmn_number():
     return render_template('dmn_number.html')
 
+@app.route('/dmn/cameo/')
+def dmn_cameo():
+    return render_template('dmn_cameo.html')
+
 @app.route('/aldia/quote/')
 def aldia_quote():
     property = 'aldia'
@@ -59,6 +63,14 @@ def number_puller():
     sourceContext = request.args['sourceContext']
     return render_template('number.html', num=num, numSize=numSize, numContext=numContext, txtSize=txtSize, source=source, sourceContext=sourceContext)
 
+@app.route('/cameo/puller/')
+def cameo_puller():
+    quote = request.args['quote']
+    name = request.args['name']
+    title = request.args['title']
+    size = request.args['size']
+    img = request.args['cameo']
+    return render_template('cameo.html', quote=quote, name=name, title=title, size=size, img=img)
 
 
 if __name__ == "__main__":

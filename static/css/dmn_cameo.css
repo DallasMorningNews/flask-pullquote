@@ -1,0 +1,66 @@
+.pullquote{
+	float:left;
+	padding-top: 20px;
+	margin-left: 20px;
+}
+
+#pullquote{
+	width:600px;
+	height:336px;
+	padding:25px 25px 10px;
+	background-color: #bebebe;
+	color:#fff;
+	font-family: 'Merriweather';
+	position:relative;
+}
+
+.quote p{
+	font-family: Raleway;
+	color:#424242;
+}
+
+
+#pullquote img{
+	position:absolute;
+	height:20px;
+	bottom:20px;
+	right:20px;
+}
+
+#pullquote .cameo{
+	width:40%;
+	height:100%;
+	float: left;
+	text-align: center;
+}
+
+#pullquote .cameo img{
+	position:inherit;
+	width:auto;
+	height:auto;
+	max-width: 100%;
+	max-height: 240px;
+	margin-left: -10px;
+}
+
+#pullquote .attribution{
+	text-align: left;
+	height:50px;
+	position:absolute;
+	bottom:20px;
+	left:15px;
+	font-family: 'Open Sans';
+	padding-left: 10px;
+}
+
+#pullquote .attribution p.name {
+  color: #424242;
+  font-family: 'Caveat';
+  font-size: 24px;
+  margin-bottom: -2px;
+}
+
+#pullquote .attribution p.title {
+  max-width: 335px;
+  line-height: 16px;
+}
