@@ -68,6 +68,9 @@ textarea{
 .dmn{
 	background-color: #26466d;
 }
+.dmn.cameo{
+	background-color: #bebebe;
+}
 .aldia{
 	background-color: #EBEBEB;
 	color:black;
