@@ -57,6 +57,9 @@ textarea{
   height: 25px;
   margin-left: 20px;
 }
+.property.dmn img{
+	height:35px;
+}
 .property.stat img{
 	margin-left: 55px;
 }

@@ -27,7 +27,7 @@
 
 background:
 	linear-gradient(-90deg, rgba(256,256,256,.05) 1px, transparent 1px),
-	linear-gradient(rgba(256,256,256,.05) 1px, transparent 1px), 
+	linear-gradient(rgba(256,256,256,.05) 1px, transparent 1px),
 	linear-gradient(-90deg, rgba(256,256,256, .06) 1px, transparent 1px),
 	linear-gradient(rgba(256,256,256,.06) 1px, transparent 1px),
 
@@ -50,7 +50,7 @@ background-size:
 
 #pullquote img{
 	position:absolute;
-	height:15px;
+	height:35px;
 	bottom:20px;
 	right:20px;
 }
