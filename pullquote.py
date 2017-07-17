@@ -12,36 +12,42 @@ def home():
 @app.route('/dmn/quote/')
 def dmn_quote():
     property = 'dallasnews'
-    return render_template('dmn_quote.html', property = property)
+    return render_template('dmn_quote.html', property=property)
 
 
 @app.route('/dmn/big-number/')
 def dmn_number():
     return render_template('dmn_number.html')
 
+
 @app.route('/dmn/cameo/')
 def dmn_cameo():
     return render_template('dmn_cameo.html')
 
+
 @app.route('/aldia/quote/')
 def aldia_quote():
     property = 'aldia'
-    return render_template('dmn_quote.html', property = property)
+    return render_template('dmn_quote.html', property=property)
+
 
 @app.route('/guidelive/quote/')
 def guidelive_quote():
     property = 'guidelive'
-    return render_template('dmn_quote.html', property = property)
+    return render_template('dmn_quote.html', property=property)
+
 
 @app.route('/sportsday/quote/')
 def sportsday_quote():
     property = 'sportsday'
-    return render_template('dmn_quote.html', property = property)
+    return render_template('dmn_quote.html', property=property)
+
 
 @app.route('/neighborsgo/quote/')
 def neighborsgo_quote():
     property = 'neighborsgo'
-    return render_template('dmn_quote.html', property = property)
+    return render_template('dmn_quote.html', property=property)
+
 
 @app.route('/quote/puller/')
 def quote_puller():
@@ -63,6 +69,7 @@ def number_puller():
     sourceContext = request.args['sourceContext']
     return render_template('number.html', num=num, numSize=numSize, numContext=numContext, txtSize=txtSize, source=source, sourceContext=sourceContext)
 
+
 @app.route('/cameo/puller/')
 def cameo_puller():
     quote = request.args['quote']
@@ -74,5 +81,5 @@ def cameo_puller():
 
 
 if __name__ == "__main__":
-	app.debug = True
-	app.run()
+    app.debug = True
+    app.run()
