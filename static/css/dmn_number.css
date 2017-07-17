@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Monda);
+@import url(https://fonts.googleapis.com/css?family=Monda);
 
 
 .fifty{
@@ -27,7 +27,7 @@
 
 background:
 	linear-gradient(-90deg, rgba(256,256,256,.05) 1px, transparent 1px),
-	linear-gradient(rgba(256,256,256,.05) 1px, transparent 1px), 
+	linear-gradient(rgba(256,256,256,.05) 1px, transparent 1px),
 	linear-gradient(-90deg, rgba(256,256,256, .06) 1px, transparent 1px),
 	linear-gradient(rgba(256,256,256,.06) 1px, transparent 1px),
 

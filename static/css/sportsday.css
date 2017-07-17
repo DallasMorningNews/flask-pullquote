@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Merriweather|Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Merriweather|Open+Sans);
 
 .pullquote{
 	float:left;
@@ -39,7 +39,7 @@
 }
 
 #pullquote .attribution p.name {
-  
+
   font-size: 21px;
   margin-bottom: 2px;
 }
@@ -49,4 +49,3 @@
   max-width: 335px;
   line-height: 16px;
 }
-
